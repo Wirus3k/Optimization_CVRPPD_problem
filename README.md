@@ -1,22 +1,21 @@
-# Optimization of the courier company's work -
-CVRPPD problem Project :book::mending_heart::runner:
+# Optimization of the courier company's work - CVRPPD problem Project :book::truck::world_map:
 
-### In pursuit of a career, many people do not realize how important a healthy lifestyle is, the lack of which carries many unpleasant consequences that may end tragically for them. Lack of physical activity (sedentary lifestyle), party lifestyle (stimulants), unhealthy diet associated with hardened fats and white sugar or neglecting periodic examinations are just some of the reasons that can result in many diseases, one of which is diseases related to the most important organ in the human body, responsible for pumping blood to other organs, i.e. the heart.
+### Description of the problem
 
-### Heart disease disrupts the entire circulatory system, and the risk of developing them increases with age. We can replace min. such disadvantages as:
+The purpose of the project execution is to create software to optimize the work of the courier company, the problem of which boils down to solving the the theme of the commuter with an additional limitation related to the load capacity of a single vehicle
 
-* ischemic heart disease (coronary artery disease),
+### Implementation of the algorithm
 
-* heart failure (acute, chronic),
+The main idea behind the type of application created was ease of use by the user and the transparency associated with the presentation of results in the form of a simple graph. In the application, the user has the ability to choose the route optimization action between a problem related only to the retrieval of packages, or a problem in which packages which parcels can also be delivered, moreover, he has the possibility to define the number of customers, start optimization selecting the route with the lowest possible cost, display an animation of creating a point-by-point route, and the ability to reset the program, the purpose of which purpose will be to enter new data. In order to achieve the best optimized route, the Gurobi solver library was used, which will enable us to minimize the cost of our model, through its proper implementation in the code. Its use will enable a much faster and more efficient process of generating an optimization solution relative to an in-house implementation of such a solver.
 
-* atrioventricular conduction block,
+### Operation of the program
 
-* myocarditis,
+The program will randomly generate points on the map and assign random weights to parcels, such action makes the application universal and the possibility of assigning real values later. In order to get a clear graph, the user will have to enter the number of parcels after turning on the application. 
 
-* pericarditis or endocarditis,
+After entering the number of parcels, which is equivalent to the number of customers, he can select the type of 
+service, whether it will be delivery or delivery and pickup.
 
-* valvular defects,
+Generate parcels, the maximum number of which is 40 (this is due to the limited 
+computational capabilities associated with the student license for the optimization library) results in a graph in which the red center dot represents the base, the blue dots are the places where parcels are delivered, and the yellow dots are the places where parcels are picked up. In the case of the delivery service, there will be only blue dots.
 
-* cardiac neurosis.
-
-### The main motivation for creating the program was our health and the attempt to anticipate heart disease, which may be directly related to other parameters of our body's work. As an athlete, I am aware of the great problem of fainting disorders caused by unknown heart diseases that can lead to death.
+The result of the program is the drawing of routes, with each new trip from the vehicle base represented by a new color. Calling the GIF button will make it possible to present the the plotting of the route point by point.

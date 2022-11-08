@@ -21,3 +21,5 @@ computational capabilities associated with the student license for the optimizat
 The result of the program is the drawing of routes, with each new trip from the vehicle base represented by a new color. Calling the GIF button will make it possible to present the the plotting of the route point by point.
 
 ![](meta/1.jpg)
+
+![](meta/2.jpg)

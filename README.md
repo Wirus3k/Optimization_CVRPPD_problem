@@ -19,3 +19,5 @@ Generate parcels, the maximum number of which is 40 (this is due to the limited
 computational capabilities associated with the student license for the optimization library) results in a graph in which the red center dot represents the base, the blue dots are the places where parcels are delivered, and the yellow dots are the places where parcels are picked up. In the case of the delivery service, there will be only blue dots.
 
 The result of the program is the drawing of routes, with each new trip from the vehicle base represented by a new color. Calling the GIF button will make it possible to present the the plotting of the route point by point.
+
+![My Image](../meta/1.jpg)
